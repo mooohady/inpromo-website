@@ -1,0 +1,27 @@
+[project]
+name = "inpromo"
+version = "0.1.0"
+description = "Django backend for InPromo catalogue and inquiry site"
+authors = [
+    {name = "Your Name",email = "you@example.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "django (>=5.2.7,<6.0.0)",
+    "pillow (>=11.3.0,<12.0.0)",
+    "python-dotenv (>=1.1.1,<2.0.0)",
+    "django-cleanup (>=9.0.0,<10.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "django-debug-toolbar (>=6.0.0,<7.0.0)",
+    "django-extensions (>=4.1,<5.0)",
+    "django-crispy-forms (>=2.4,<3.0)"
+]
